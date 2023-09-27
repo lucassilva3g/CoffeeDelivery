@@ -15,6 +15,7 @@ export interface Backend {
   price: number
   title: string
   id: number
+  quantity: number
 }
 
 function OurCoffeeSection() {
