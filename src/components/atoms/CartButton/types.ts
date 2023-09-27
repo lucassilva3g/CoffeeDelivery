@@ -5,7 +5,7 @@ export enum CartPropsVariant {
 }
 
 export type CartButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
-  type?: "empty" | "full"
+  variant?: "empty" | "full"
   quantity?: number
   backgroundColor?: CartPropsVariant
 }

@@ -18,7 +18,7 @@ function Header() {
           <p>São Paulo, SP</p>
         </StyledLocation>
         <Link to="/checkout">
-          <CartButton type="full" quantity={totalCartQuantity} />
+          <CartButton variant="full" quantity={totalCartQuantity} />
         </Link>
       </StyledCart>
     </StyledHeader>

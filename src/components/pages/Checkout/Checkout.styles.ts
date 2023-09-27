@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 import { media } from "../../../styles/breakpoints/media"
-import { ThemeColors } from "./../../../styles/themes/types"
 
 export const StyledCheckoutContainer = styled.div`
   display: flex;

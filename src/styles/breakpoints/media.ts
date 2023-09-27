@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
-import { css, SimpleInterpolation } from "styled-components"
+import { css, Interpolation } from "styled-components"
 
 const size = {
   xs: "0px",
@@ -12,7 +12,7 @@ const size = {
 
 export const xs = (
   strings: TemplateStringsArray,
-  ...interpolations: SimpleInterpolation[]
+  ...interpolations: Array<Interpolation<any>>
 ) => css`
   @media (min-width: ${size.xs}) {
     ${css(strings, ...interpolations)};
@@ -21,7 +21,7 @@ export const xs = (
 
 export const sm = (
   strings: TemplateStringsArray,
-  ...interpolations: SimpleInterpolation[]
+  ...interpolations: Array<Interpolation<any>>
 ) => css`
   @media (min-width: ${size.sm}) {
     ${css(strings, ...interpolations)};
@@ -30,7 +30,7 @@ export const sm = (
 
 export const md = (
   strings: TemplateStringsArray,
-  ...interpolations: SimpleInterpolation[]
+  ...interpolations: Array<Interpolation<any>>
 ) => css`
   @media (min-width: ${size.md}) {
     ${css(strings, ...interpolations)};
@@ -39,7 +39,7 @@ export const md = (
 
 export const lg = (
   strings: TemplateStringsArray,
-  ...interpolations: SimpleInterpolation[]
+  ...interpolations: Array<Interpolation<any>>
 ) => css`
   @media (min-width: ${size.lg}) {
     ${css(strings, ...interpolations)};
@@ -48,7 +48,7 @@ export const lg = (
 
 export const xl = (
   strings: TemplateStringsArray,
-  ...interpolations: SimpleInterpolation[]
+  ...interpolations: Array<Interpolation<any>>
 ) => css`
   @media (min-width: ${size.xl}) {
     ${css(strings, ...interpolations)};
@@ -57,7 +57,7 @@ export const xl = (
 
 export const xxl = (
   strings: TemplateStringsArray,
-  ...interpolations: SimpleInterpolation[]
+  ...interpolations: Array<Interpolation<any>>
 ) => css`
   @media (min-width: ${size.xxl}) {
     ${css(strings, ...interpolations)};
