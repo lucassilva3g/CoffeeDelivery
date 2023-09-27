@@ -1,7 +1,7 @@
+import { Cart } from "../../../contexts/CartContext"
 import { CartButton } from "../../atoms/CartButton/CartButton"
 import { CartPropsVariant } from "../../atoms/CartButton/types"
 import { QuantitySelector } from "../../atoms/QuantitySelector/QuantitySelector"
-import { Backend } from "../../organisms/OurCoffeesSection/OurCoffeesSection"
 import {
   StyledContainer,
   StyledContent,
@@ -16,7 +16,7 @@ import {
 } from "./CoffeeCard.styles"
 
 export interface CoffeeCardProps {
-  item: Backend
+  item: Cart
 }
 
 export const CoffeeCard: React.FC<CoffeeCardProps> = ({ item }) => {

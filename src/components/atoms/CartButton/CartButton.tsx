@@ -8,13 +8,13 @@ import {
 import { CartButtonProps, CartPropsVariant } from "./types"
 
 const CartButton: React.FC<CartButtonProps> = ({
-  type,
+  variant,
   quantity,
   backgroundColor = CartPropsVariant.Yellow,
   ...rest
 }) => {
   const shouldDisplayQuantity =
-    type === "full" && quantity !== undefined && quantity > 0
+    variant === "full" && quantity !== undefined && quantity > 0
   return (
     <StyledCartButton backgroundColor={backgroundColor} {...rest}>
       <StyledShoppingCartIcon
