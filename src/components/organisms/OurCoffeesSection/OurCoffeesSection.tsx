@@ -114,7 +114,8 @@ export const coffeeData: Coffee[] = [
   {
     id: 12,
     title: "Havaiano",
-    imageSrc: "./src/assets/images/havaiano.png",
+    imageSrc:
+      "https://www.google.com.br/url?sa=i&url=https%3A%2F%2Fciclovivo.com.br%2Fvida-sustentavel%2Fequilibrio%2Fde-um-respiro-19-imagens-que-trazem-paz%2F&psig=AOvVaw38_o14JXc3_LiDaQ4lZ_3D&ust=1696005552796000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCOCggpbfzYEDFQAAAAAdAAAAABAE",
     price: 9.9,
     description: "Bebida adocicada preparada com café e leite de coco",
     categories: ["Especial"],
