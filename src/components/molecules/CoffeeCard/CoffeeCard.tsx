@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 import { Cart } from "../../../contexts/CartContext"
 import { CartButton } from "../../atoms/CartButton/CartButton"
 import { CartPropsVariant } from "../../atoms/CartButton/types"
@@ -37,7 +39,9 @@ export const CoffeeCard: React.FC<CoffeeCardProps> = ({ item }) => {
           </StyledPriceLabel>
           <StyledPriceActions>
             <QuantitySelector item={item} />
-            <CartButton backgroundColor={CartPropsVariant.Purple} />
+            <Link to="/checkout">
+              <CartButton backgroundColor={CartPropsVariant.Purple} />
+            </Link>
           </StyledPriceActions>
         </StyledPriceWrapper>
       </StyledContent>
